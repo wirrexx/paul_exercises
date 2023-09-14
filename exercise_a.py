@@ -4,6 +4,7 @@ name = "Wisam"
 age = 36
 message = "I will be a better programmer"
 height = 174.5
+isMarried = True
 
 print(commentLine)
 print(type(name))
