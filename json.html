@@ -7,9 +7,59 @@
 </head>
 <body>
 <script>
-    const txt = '{"name":"Wisam", "age":"36", "city":"Berlin"}'
+    const txt = 
+        `{
+            "firstName":"Wisam",
+            "lastName":"odish",
+            "age":36,
+            "birthdate":"20.02.1987",
+            "nationality":[
+                        {
+                        "nationality_a":"Sweden", 
+                        "nationality_b":"Iraq"
+                        }
+                            ],
+        
+            "gender":"M",
+            "isMarried":true,
+            "hasChildren":true,
+            
+            "hobbiesList":[
+                            "Family", 
+                            "Rest", 
+                            "Gaming", 
+                            "Sport"
+                        ],
+
+            "adress": [
+                    {
+                    "street":"Seegefelderstr.", 
+                    "house_number":"30A", 
+                    "zip_code":13583, 
+                    "city":"Berlin", 
+                    "Country": "Germany"
+                    }
+                    ],
+
+            "car":false, 
+            "bike":false, 
+
+            "longboard":[
+                        {
+                        "brand":"Apollo", 
+                        "year":"2016", 
+                        "color":"Lightbrown"
+                        }
+                    ],
+
+            "favouriteShows": 
+            ["Star Trek: Under the deck",
+            "Blacklist", 
+            "One Piece"],
+            "pets":"None"
+        }`
     const obj = JSON.parse(txt)
-    document.getElementById("demo").innerHTML = obj.name + ", " + obj.age;
+    document.getElementById("demo").innerHTML = obj.firstName + ", " + obj.age;
 </script>
 </body>
 </html>
