@@ -1,14 +1,12 @@
-import math
+# variables for name, age and a message to my future self
+name = "Wisam"
+age = 36
+message = "I will be a better programmer"
 
-myAge = 36
-myName = 'Wisam'
-myHeight = 173.5
-myGENDER = "M"
+print(type(name))
+print(type(age))
 
-myHeightNew = str(myHeight)
+# By formatting my good, i can have a cleaner print statement. 
+print(f"Hi, my name is {name}, and I am {str(age)} years old, at the end of the school, {message}")
 
-print(type(myAge))
-print(type(myName))
-print(type(myHeightNew))
-print(isinstance(myHeight, float)) #isinstance kollar om variabel myHeight är en float
-print(isinstance(myHeightNew, int))
+"""It should be easier to exchange name, age and message for whomever is using this code"""
