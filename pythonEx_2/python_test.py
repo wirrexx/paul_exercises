@@ -7,10 +7,12 @@ y = "Green"
 z = "Blue"
 
 myAge = None
-
+bar = None
 
 
 # Using bool() casting på olika datatyper
 
 print(bool())
 print(bool(""))  #Empty string = false  Written string = true
+print(myAge)
+print(bar)
