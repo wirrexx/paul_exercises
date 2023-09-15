@@ -1,21 +1,6 @@
-x, y , z = "Red", "Green", "Blue" # Dont do this, for readability!
-
-
-#Do this, For readability! Easier to debug as Variables are more seperated.
-x = "Red"
-y = "Green"
-z = "Blue"
-
-myAge = None
-bar = None
-
-
-# Using bool() casting på olika datatyper
-
-print(bool())
-print(bool(""))  #Empty string = false  Written string = true
-print(myAge)
-print(bar)
+number = -120 
+numberNew = number * -1 #abs räknar ut som -1
+print (numberNew)
 
 
 def calculate_odd_even(number):

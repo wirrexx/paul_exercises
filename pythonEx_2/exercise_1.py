@@ -1,3 +1,16 @@
-print(max(13, 333, 445, 2, 44))  #finding the biggest num
-print(min(13, 333, 445, 2, 44))  #finding the smallest num
-print(round(13.5)) #rounding up to closest
+
+a = 12 + 35 
+b = 43 - 56 
+c = 4 * 4
+d = 4 / 5 
+e = 24 % 5 
+f = 2 ** 4 
+g = 12.3 // 4 
+bool = True * False
+cmplxnum = 5 * (2 * 5j)
+
+print(a, b, c, d , e, f , g, bool, cmplxnum, sep=" , ")
+print(round(d))
+print(abs(b))
+
+
