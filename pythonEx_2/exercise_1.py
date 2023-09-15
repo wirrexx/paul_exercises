@@ -12,5 +12,6 @@ cmplxnum = 5 * (2 * 5j)
 print(a, b, c, d , e, f , g, bool, cmplxnum, sep=" , ")
 print(round(d))
 print(abs(b))
+print(pow(2,5))
 
 
