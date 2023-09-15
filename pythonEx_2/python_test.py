@@ -12,4 +12,9 @@ x = 10
 y = 20 
 x, y = y,x
 
-print(x, y, sep="")
+exponantionalNum = 1e15
+highNum = 100_000_000_000_000_000_000
+
+print(x, y, sep=" , ")
+print(exponantionalNum)
+print(highNum)
