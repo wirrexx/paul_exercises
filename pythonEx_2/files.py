@@ -1,7 +1,9 @@
+import os
 from pprint import pprint
-f = open('turtles.csv', 'w')
+f = open('turtles.csv', 'a')
 print (f.writable())
-f.write('Welcome to the world of files.')
+f.writelines('Welcome to the world of files.\n')
+f.write('now get the f out')
 
 f.close()
 
@@ -12,3 +14,6 @@ lines = f.readlines()
 
 for x in lines:
     print(x)
+
+
+os.remove ('turtles.csv')
