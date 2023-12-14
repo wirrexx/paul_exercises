@@ -15,7 +15,7 @@ def add_wish():
 def open_wishes():
     try:
         with open ('wishes.txt', 'r') as file:
-            wishes = file.readlines()1
+            wishes = file.readlines()
             for wish in wishes:
                 listbox.insert(tk.END, wish)
     except (FileNotFoundError):
@@ -25,7 +25,15 @@ def open_wishes():
 
 
 def save_wishes():
-    pass
+    try:
+        with open ('wishes.txt', 'a+') as file:
+            wishes = file.readlines()
+            for wish in wishes:
+                listbox.insert(tk.END, wish)
+    except (FileNotFoundError):
+        print('file not found')       
+    except (Exception):
+        print('File is missing or corrupt.')
         
 label = tk.Label(window, text='Enter your christmas wish: ', background='grey', foreground='white', pady=5)
 label.pack()
@@ -39,11 +47,13 @@ listbox = tk.Listbox(window, width=20, height=5, background='grey', foreground='
 listbox.pack(pady=5)
 
 # add wishes
-button = tk.Button(window, text='Add', command=add_wish)
-button.pack(pady=5)
+add_button = tk.Button(window, text='Add', command=add_wish)
+add_button.pack(pady=2)
 
 # open wishes
-open_button= tk.Button(window, text ='Open file', command=open_wishes)
-open_button.pack(pady=5)
+open_button= tk.Button(window, text='Open file', command=open_wishes)
+open_button.pack(pady=2)
+
+
 
 window.mainloop()
