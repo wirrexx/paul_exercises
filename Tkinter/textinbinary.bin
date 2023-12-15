@@ -1,0 +1,1 @@
+It is christmas time example with binary data generated on the client's computer in a text format. we will be converting the tet to binary data using three approaches: (1) bytes and decode, (2) simply prepending b and (3) and we will be relying on encode
