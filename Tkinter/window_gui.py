@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
 from PIL import Image, ImageTk
+import os
 
 window = tk.Tk()
 window.title('Christmas Wishes')
@@ -17,8 +18,8 @@ def load_imagE():
         image = Image.open(file_path)
         image = image.resize((400,400))
         photo = ImageTk.PhotoImage(image)
-        image_label.config(image=photo)
-        image_label.image = photo
+        # image_label.config(image=photo)
+        # image_label.image = photo
 
 def add_wish():
     wish = textbox.get()
