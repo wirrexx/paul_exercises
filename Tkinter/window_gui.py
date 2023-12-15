@@ -42,7 +42,7 @@ def open_wishes():
 
 def save_wishes(wish):
     try:
-        with open ('wishes.txt', 'a') as file:
+        with open ('wishes.txt', 'ab') as file:
             file.writelines(wish)
     except (FileNotFoundError):
         print('file not found')       
