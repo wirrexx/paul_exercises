@@ -35,7 +35,7 @@ print('Original Binary Code: ', binray_data)
 print('Armored Binary Code: ', armored_data)
 
 
-with open('original.png', 'rb') as file: 
+with open('original.jpeg', 'rb') as file: 
     contents = file.read()
     armored_image = base64.b64encode(contents)
     print('Armored File: ', armored_image)
